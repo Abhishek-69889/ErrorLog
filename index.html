@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mistake Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mistake Tracker</h1>
+
+    <form id="mistakeForm">
+      <input type="text" id="title" placeholder="Title of mistake" required />
+      <select id="type">
+        <option value="DSA">DSA</option>
+        <option value="Frontend">Frontend</option>
+      </select>
+      <input type="text" id="source" placeholder="Source (e.g., LeetCode, Project)" required />
+      <textarea id="mistake" placeholder="What went wrong?" required></textarea>
+      <textarea id="solution" placeholder="Correct solution or fix" required></textarea>
+      <textarea id="learned" placeholder="What you learned / how to avoid it" required></textarea>
+      <input type="text" id="tags" placeholder="Tags (comma-separated)" />
+      <button type="submit">Add Mistake</button>
+    </form>
+
+    <div id="mistakeList" class="mistake-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
