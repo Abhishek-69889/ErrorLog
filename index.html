@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mistake Tracker</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -24,6 +25,17 @@
     </form>
 
     <div id="mistakeList" class="mistake-list"></div>
+  </div>
+
+  <!-- Custom Confirmation Modal -->
+  <div id="confirmModal" class="confirm-modal hidden">
+    <div class="modal-content">
+      <p id="confirmMessage">Are you sure you want to delete this mistake?</p>
+      <div class="modal-actions">
+        <button id="confirmYes" class="btn-yes">Yes, Delete</button>
+        <button id="confirmNo" class="btn-no">Cancel</button>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
